@@ -1,0 +1,42 @@
+.choose-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 3px solid #1d2124;
+  margin-top: 50px;
+  background-color: #9b59b6;
+  width: 500px;
+  margin-left: 300px;
+  border-radius: 10px;
+  color: white;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-bottom: 87px;
+  text-align: center;
+}
+
+.img-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  color: #eb041a;
+  display: block;
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+
+.print-pdf-bg {
+  background-image: linear-gradient(to right bottom, #e6cc818c, #dee2e6);
+  height: 590px;
+  padding-top: 50px;
+}

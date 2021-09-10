@@ -1,0 +1,19 @@
+<div class="print-pdf-bg">
+  <h2 class="sub-title">Reformat a JPG, PNG, or other image to a PDF file in a few seconds.</h2>
+
+  <label class="choose-file">
+    <a>Click anywhere here to select the images to convert to PDF</a>
+    <input style="display: none" id="upload_file" type="file" accept="image/png, image/gif, image/jpeg" multiple="multiple" #file (change)="onChange($event)">
+  </label>
+
+  <div *ngFor="let url of sanitizedImageList; let i=index" class="img-wrap">
+    <img [src]="url" class="rounded mb-3" width="180">
+    <button type="button" class="close close-icon" placement="left" (click)="deleteSelected(i)">
+      <span class="font-weight-normal black-text">x</span>
+    </button>
+  </div>
+
+  <div class="sub-title" *ngIf="sanitizedImageList.length">
+    <button id="btn1" class="rounded" (click)="convertToPDF($event)">Convert To PDF Now!!!</button>
+  </div>
+</div>
